@@ -17,7 +17,32 @@ public class App {
 		Player p1 = new Player("Lauren");
 		Player p2 = new Player("Molly");
 		
+		//players draw their cards
+		for (int i = 1; i <= 52; i++) {
+			if(i % 2 == 0) {
+				p1.drawToHand(playDeck);
+			}else {
+				p2.drawToHand(playDeck);
+			}
+		}
 		
+		//actual game
+		for (int i = 1; i < 26; i++) {
+			int p1Score;
+			int p2Score;
+			Player winner;
+			
+			p1Score = p1.flip();
+			p2Score = p2.flip();
+			if (p1Score > p2Score) {
+				winner = p1;
+			} else if (p1Score == p2Score){
+				winner = null;
+			} else {
+				winner = p2;
+			}
+			
+		}
 	
 	}
 	

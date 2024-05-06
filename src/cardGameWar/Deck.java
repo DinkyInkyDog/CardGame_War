@@ -12,7 +12,9 @@ public class Deck {
 		List<String> listSuits = new ArrayList<String>(Arrays.asList("Diamonds", "Clubs", "Spades", "Hearts"));
 		for (String suit : listSuits) {
 			for (int i = 1; i < 14; i++) {
+				
 				Card instance = new Card(suit, i);
+				instance.describe();
 				newDeck.add(instance);
 			}
 		}
