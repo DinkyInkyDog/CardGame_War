@@ -23,6 +23,13 @@ public class Player {
 		return name;
 	}
 
-	
+	public void describe() {
+		System.out.println("Player: " + name);
+		System.out.println("They have a score of " + score);
+		System.out.println("In their hand they have: ");
+		for (Card card: hand) {
+			card.describe();
+		}
+	}
 	
 }
