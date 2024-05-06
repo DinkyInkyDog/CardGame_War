@@ -3,6 +3,7 @@ package cardGameWar;
 public class Card {
 
 	private int value;
+	@SuppressWarnings("unused")
 	private String suit;
 	private String name;
 	
@@ -49,6 +50,11 @@ public class Card {
 		return this.value;
 	}
 	
-	
+	public void setSuit(String suit) {
+		this.suit = suit;
+	}
+	public void describe() {
+		System.out.println(name);
+	}
 
 }
