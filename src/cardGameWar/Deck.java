@@ -14,7 +14,7 @@ public class Deck {
 			for (int i = 1; i < 14; i++) {
 				
 				Card instance = new Card(suit, i);
-				instance.describe();
+				//instance.describe();
 				newDeck.add(instance);
 			}
 		}
