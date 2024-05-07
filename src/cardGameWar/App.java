@@ -10,6 +10,9 @@ public class App {
 	public static void main(String[] args) {
 		// lets test this out
 		//first I'll need two characters
+		Card test = new Card("Clubs", 4);
+		test.describe();
+		System.out.println(test.getValue());
 		
 		Deck playDeck = new Deck();
 		playDeck.shuffle();
