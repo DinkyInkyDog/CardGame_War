@@ -58,7 +58,8 @@ public class App {
 		} else if (p2.getScore() > p1.getScore()){
 			System.out.println(String.format("%s has won the war with %d to %s's %d!", p2.getName(), p2.getScore(), p1.getName(), p1.getScore()));
 		} else {
-			System.out.println("The war ended in a stalemate. It's a tie.");
+			System.out.println("The war ended in a stalemate. Both players had a score of "+ p1.getScore());
+			
 		}
 		
 	}
